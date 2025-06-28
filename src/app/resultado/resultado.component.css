@@ -1,0 +1,30 @@
+.resultado-container {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #0b3d91;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #0b3d91;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #062a64;
+}
