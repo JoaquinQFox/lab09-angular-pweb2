@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class Word {
 
-  private=['Amor ','Cabeza','Chocolate', 'Papa'];
+  private words = ['Amor', 'Cabeza', 'Chocolate', 'Papa'];
   constructor() { }
 
   getRandomWord(): string {

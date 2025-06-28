@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import { WordService} from '../word.service';
 
 @Component({
   selector: 'app-logica-ahorcado',
@@ -6,6 +7,10 @@ import { Component } from '@angular/core';
   templateUrl: './logica-ahorcado.html',
   styleUrl: './logica-ahorcado.css'
 })
-export class LogicaAhorcado {
-
+export class LogicaAhorcado  implements OnInit {
+  palabra: string = '';
+  letrasNoAdivinadas: string='';
+  letrasAdivinadas: string[] = [];
+  intentos:number = 6;
+  estadoJuego:boolean=false;
 }
