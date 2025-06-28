@@ -1,0 +1,55 @@
+.titulo-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 12px;
+}
+
+.titulo {
+  text-align: center;
+  padding: 8px 16px;
+
+  font-size: 16px;
+  background-color: skyblue;
+}
+
+.section-game {
+  border: solid red 4px;
+  display: flex;
+  gap: 20px;
+
+  padding: 8px;
+}
+
+.image-div {
+  height: 250px;
+  width: 200px;
+  border: solid black 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.desc-div {
+  width: 100%;
+  border: 4px solid blue;
+}
+
+.boton-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton-jugar {
+  padding: 4px;
+  width: 6em;
+}
