@@ -1,1 +1,24 @@
-<p>logica-ahorcado works!</p>
+
+    <div class="container">
+        <h1>Juego del Ahorcado</h1> 
+        <div *ngIf="!estadoJuego">
+            <p>Palabra: {{ letrasNoAdivinadas }}</p>
+            <p>Intentos restantes: {{ intentos }}</p>
+
+        <input 
+            [(ngModel)]="letraIngresada" 
+            maxlength="1" 
+            (keyup.enter)="adivinarLetra()" 
+            placeholder="Ingresa una letra" 
+        />
+        <button (click)="adivinarLetra()">Adivinar</button>
+
+        <p>Letras adivinadas: {{ letrasAdivinadas.join(', ') }}</p>
+        </div>
+
+        <div *ngIf="estadoJuego">
+            <h3>{{ intentos === 0 ? '¡Perdiste!' : '¡Ganaste!' }}</h3>
+            <p>La palabra era: {{ palabra }}</p>
+            <button (click)="iniciarJuego()">Jugar de nuevo</button>
+            </div>
+</div>
