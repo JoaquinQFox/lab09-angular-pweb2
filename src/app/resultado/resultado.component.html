@@ -1,5 +1,6 @@
 <div class="resultado">
-    <h2>Resultado del juego</h2>
-    <p>Aquí se mostrará si ganaste o perdiste.</p>
-    <button>Jugar de nuevo</button>
+    <h2 *ngIf="gano">¡Felicidades! Ganaste</h2>
+    <h2 *ngIf="!gano">Game Over</h2>
+    <p>La palabra era: <strong>{{ palabra }}</strong></p>
+    <button (click)="jugarDeNuevo()">Jugar de nuevo</button>
 </div>
