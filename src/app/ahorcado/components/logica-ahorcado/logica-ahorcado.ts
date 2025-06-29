@@ -2,10 +2,11 @@ import { Component,OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Word } from '../../services/word';
+import { ResultadoComponent } from "../resultado/resultado.component";
 
 @Component({
   selector: 'app-logica-ahorcado',
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, ResultadoComponent],
   templateUrl: './logica-ahorcado.html',
   styleUrl: './logica-ahorcado.css'
 })

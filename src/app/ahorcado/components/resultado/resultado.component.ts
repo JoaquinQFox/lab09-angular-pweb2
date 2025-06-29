@@ -10,12 +10,19 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./resultado.component.css']
 })
 export class ResultadoComponent {
-  @Input() gano: boolean = false;
+  @Input() intentos: number = 0;
   @Input() palabra: string = '';
+
+  comprobarVictoria() {
+    if (this.intentos <= 0)
+      return false;
+    else
+      return true;
+  }
 
   constructor(private router: Router) {}
   jugarDeNuevo() {
-    this.router.navigate(['/']);
+    window.location.reload();
   }
 
 }

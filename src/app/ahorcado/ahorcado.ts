@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { LogicaAhorcado } from './components/logica-ahorcado/logica-ahorcado';
 
 @Component({
   selector: 'app-ahorcado',
-  imports: [],
+  imports: [LogicaAhorcado],
   templateUrl: './ahorcado.html',
   styleUrl: './ahorcado.css'
 })

@@ -1,6 +1,6 @@
 <div class="resultado">
-    <h2 *ngIf="gano">¡Felicidades! Ganaste</h2>
-    <h2 *ngIf="!gano">Game Over</h2>
+    <h2 *ngIf="comprobarVictoria()">¡Felicidades! Ganaste</h2>
+    <h2 *ngIf="!comprobarVictoria()">Game Over</h2>
     <p>La palabra era: <strong>{{ palabra }}</strong></p>
     <button (click)="jugarDeNuevo()">Jugar de nuevo</button>
 </div>
