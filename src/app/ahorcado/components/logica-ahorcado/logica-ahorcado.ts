@@ -8,7 +8,10 @@ import { ResultadoComponent } from "../resultado/resultado.component";
   selector: 'app-logica-ahorcado',
   imports: [FormsModule, CommonModule, ResultadoComponent],
   templateUrl: './logica-ahorcado.html',
-  styleUrl: './logica-ahorcado.css'
+  styleUrls: [
+    './logica-ahorcado.css',
+    '../../../home/home.css'
+  ]
 })
 export class LogicaAhorcado  implements OnInit {
   palabra: string = '';

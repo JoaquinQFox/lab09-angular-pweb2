@@ -1,20 +1,24 @@
 
     <div class="container">
-        <h1>Juego del Ahorcado</h1>
+        <div class="section"><h1 class="titulo">Juego del Ahorcado</h1></div>
         <div *ngIf="!estadoJuego">
-            <img class="img-ahorcado" [src]="imagenAhorcado" alt="AhorcadoIntentos {{intentos}}">
-            <p>Palabra: {{ letrasNoAdivinadas }}</p>
-            <p>Intentos restantes: {{ intentos }}</p>
-
-        <input
-            [(ngModel)]="letraIngresada"
-            maxlength="1"
-            (keyup.enter)="adivinarLetra()"
-            placeholder="Ingresa una letra"
-        />
-        <button (click)="adivinarLetra()">Adivinar</button>
+            <div class="section"><img class="img-ahorcado" [src]="imagenAhorcado" alt="AhorcadoIntentos {{intentos}}"></div>
+            <div class="section"><h1 class="letras">{{ letrasNoAdivinadas }}</h1></div>
+            <div class="section"><p>Intentos restantes: {{ intentos }}</p></div>
+        
+        <div class="section-game">
+            <input
+                [(ngModel)]="letraIngresada"
+                maxlength="1"
+                (keyup.enter)="adivinarLetra()"
+                placeholder="Ingresa una letra"
+                class="input-letra"
+            />
+        <button class="boton-jugar" (click)="adivinarLetra()">Adivinar</button>
 
         <p>Letras adivinadas: {{ letrasAdivinadas.join(', ') }}</p>
+        </div>
+        
         </div>
 
         <div *ngIf="estadoJuego">
