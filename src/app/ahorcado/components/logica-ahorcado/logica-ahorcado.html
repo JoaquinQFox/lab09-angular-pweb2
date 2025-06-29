@@ -3,9 +3,9 @@
         <div class="section"><h1 class="titulo">Juego del Ahorcado</h1></div>
         <div *ngIf="!estadoJuego">
             <div class="section"><img class="img-ahorcado" [src]="imagenAhorcado" alt="AhorcadoIntentos {{intentos}}"></div>
-            <div class="section"><h1 class="letras">{{ letrasNoAdivinadas }}</h1></div>
+            <div class="section"><h1 class="letras">{{ letrasNoAdivinadas.toUpperCase() }}</h1></div>
             <div class="section"><p>Intentos restantes: {{ intentos }}</p></div>
-        
+
         <div class="section-game">
             <input
                 [(ngModel)]="letraIngresada"
@@ -18,7 +18,7 @@
 
         <p>Letras adivinadas: {{ letrasAdivinadas.join(', ') }}</p>
         </div>
-        
+
         </div>
 
         <div *ngIf="estadoJuego">
