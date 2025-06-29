@@ -1,10 +1,11 @@
 import { Component,OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 import { Word} from '../word';
 
 @Component({
   selector: 'app-logica-ahorcado',
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './logica-ahorcado.html',
   styleUrl: './logica-ahorcado.css'
 })
@@ -38,7 +39,7 @@ export class LogicaAhorcado  implements OnInit {
 
     const letra = this.letraIngresada.toUpperCase();
     
-    // Verificar si la letra ya fue adivinada
+    // Verificamos si la letra ya fue adivinada
     if (this.letrasAdivinadas.includes(letra)) {
       this.letraIngresada = '';
       return;
@@ -47,10 +48,10 @@ export class LogicaAhorcado  implements OnInit {
     this.letrasAdivinadas.push(letra);
 
     if (this.palabra.toUpperCase().includes(letra)) {
-      // Letra correcta - actualizar palabra mostrada
+      // si la letra es correcta - actualizamos la palabra mostrada
       this.actualizarPalabraMostrada();
     } else {
-      // Letra incorrecta - reducir intentos
+      // si la letra esta incorrecta - reducimos los intentos
       this.intentos--;
     }
 
@@ -66,12 +67,12 @@ export class LogicaAhorcado  implements OnInit {
   }
 
   verificarEstadoJuego(): void {
-    // Verificar si ganó
+    // Verificamos si gano
     const palabraCompleta = this.palabra
       .split('')
       .every(letra => this.letrasAdivinadas.includes(letra.toUpperCase()));
     
-    // Verificar si perdió
+    // Verificamos si perdio
     const perdio = this.intentos <= 0;
 
     if (palabraCompleta || perdio) {

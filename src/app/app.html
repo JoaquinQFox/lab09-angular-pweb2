@@ -1,23 +1,61 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<div class="app-container">
+  <nav>
+    <h1>Laboratorio 09 - Angular</h1>
+    <ul>
+      <li><a routerLink="/ahorcado">Juego del Ahorcado</a></li>
+      <li><a routerLink="/resultado">Resultado</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>
 
 <style>
-  :host {
-    --bright-blue: oklch(51.01% 0.274 263.83);
-    --electric-violet: oklch(53.18% 0.28 296.97);
-    --french-violet: oklch(47.66% 0.246 305.88);
-    --vivid-pink: oklch(69.02% 0.277 332.77);
-    --hot-red: oklch(61.42% 0.238 15.34);
-    --orange-red: oklch(63.32% 0.24 31.68);
+.app-container {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
 
-    --gray-900: oklch(19.37% 0.006 300.98);
-    --gray-700: oklch(36.98% 0.014 302.71);
+nav {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+nav h1 {
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #007bff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav li a:hover {
+  background-color: #e9ecef;
+}
+
+main {
+  min-height: 400px;
+}
+</style>
+<style>
     --gray-400: oklch(70.9% 0.015 304.04);
 
     --red-to-pink-to-purple-vertical-gradient: linear-gradient(
