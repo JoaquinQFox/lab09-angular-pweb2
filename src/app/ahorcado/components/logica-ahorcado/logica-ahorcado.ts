@@ -80,4 +80,8 @@ export class LogicaAhorcado  implements OnInit {
       this.estadoJuego = true;
     }
   }
+
+  get imagenAhorcado(): String {
+    return '/images/ahorcado'+ this.intentos + '.png';
+  }
 }
