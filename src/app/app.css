@@ -1,9 +1,21 @@
+/* Layout principal con sticky footer */
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+router-outlet {
+  flex: 1;
+}
+
+
 .app-container {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px;
+  padding: 0;
 }
-
 nav {
   background-color: #f0f0f0;
   padding: 20px;
