@@ -6,7 +6,7 @@
 
 h2 {
     font-size: 2rem;
-    color: #0b3d91;
+    color: #5e35b1;
 }
 
 p {
@@ -15,7 +15,7 @@ p {
 }
 
 button {
-    background-color: #0b3d91;
+    background-color: #5e35b1;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -26,11 +26,5 @@ button {
 }
 
 button:hover {
-    background-color: #062a64;
-}
-
-.img-Resultado {
-    max-width: 100%;
-    height: auto;
-    width: 300px;
+    background-color: #5e35b1;
 }

@@ -7,7 +7,11 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './resultado.component.html',
-  styleUrls: ['./resultado.component.css']
+  styleUrls: [
+    './resultado.component.css',
+    '../../../home/home.css',
+    '../logica-ahorcado/logica-ahorcado.css'
+  ]
 })
 export class ResultadoComponent {
   @Input() intentos: number = 0;
