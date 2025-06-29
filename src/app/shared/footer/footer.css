@@ -1,8 +1,8 @@
 .footer {
-  background-color: #5e35b1;
+  background-color: #7e57c2;
   color: white;
-  padding: 40px 20px 20px;
-  margin-top: auto;
+  padding: 30px 20px 16px;
+  margin-top: 30px;
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -16,7 +16,7 @@
 }
 
 .footer-info h3 {
-  color: #e1bee7;
+  color: #fff;
   margin-bottom: 15px;
   font-size: 24px;
   font-weight: bold;
@@ -30,12 +30,12 @@
 }
 
 .footer-details strong {
-  color: #e1bee7;
+  color: #fff;
 }
 
 .footer-bottom {
-  border-top: 1px solid #7e57c2;
-  padding-top: 20px;
+  border-top: 1px solid #9575cd;
+  padding-top: 16px;
   text-align: center;
 }
 
@@ -45,14 +45,13 @@
   opacity: 0.9;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   .footer-content {
     grid-template-columns: 1fr;
     gap: 20px;
     text-align: center;
   }
-  
+
   .footer {
     padding: 30px 15px 15px;
   }
