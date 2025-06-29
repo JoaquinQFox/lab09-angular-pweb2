@@ -2,7 +2,7 @@
     <div class="container">
         <h1>Juego del Ahorcado</h1>
         <div *ngIf="!estadoJuego">
-            <img [src]="imagenAhorcado" alt="AhorcadoIntentos {{intentos}}">
+            <img class="img-ahorcado" [src]="imagenAhorcado" alt="AhorcadoIntentos {{intentos}}">
             <p>Palabra: {{ letrasNoAdivinadas }}</p>
             <p>Intentos restantes: {{ intentos }}</p>
 
