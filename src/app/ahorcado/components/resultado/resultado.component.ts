@@ -20,6 +20,14 @@ export class ResultadoComponent {
       return true;
   }
 
+  get imagenFinal(): string {
+    const imagen:string = (this.intentos <= 0)
+      ? 'ahorcadoGameOver.png'
+      : 'ahorcadoWin.png';
+
+    return '/images/' + imagen;
+  }
+
   constructor(private router: Router) {}
   jugarDeNuevo() {
     window.location.reload();
