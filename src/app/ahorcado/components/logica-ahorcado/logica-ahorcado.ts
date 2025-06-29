@@ -1,7 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { Word} from '../word';
+import { Word } from '../../services/word';
 
 @Component({
   selector: 'app-logica-ahorcado',
@@ -38,7 +38,7 @@ export class LogicaAhorcado  implements OnInit {
     }
 
     const letra = this.letraIngresada.toUpperCase();
-    
+
     // Verificamos si la letra ya fue adivinada
     if (this.letrasAdivinadas.includes(letra)) {
       this.letraIngresada = '';
@@ -71,7 +71,7 @@ export class LogicaAhorcado  implements OnInit {
     const palabraCompleta = this.palabra
       .split('')
       .every(letra => this.letrasAdivinadas.includes(letra.toUpperCase()));
-    
+
     // Verificamos si perdio
     const perdio = this.intentos <= 0;
 
