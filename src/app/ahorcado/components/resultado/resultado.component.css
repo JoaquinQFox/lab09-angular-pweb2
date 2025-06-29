@@ -28,3 +28,9 @@ button {
 button:hover {
     background-color: #062a64;
 }
+
+.img-Resultado {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+}
